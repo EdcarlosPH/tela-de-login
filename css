@@ -1,0 +1,151 @@
+
+        body {
+            font-family: 'Bebas Neue', cursive;
+            background-color: #121214;
+            overflow: hidden;
+            ;
+        }
+
+        .box {
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #202024;
+            padding: 15px;
+            border-radius: 15px;
+            width: 30%;
+
+        }
+        h1{ 
+            font-size: 27px;
+            color:  #22e0ff ;
+            
+           
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            
+           
+         
+        }
+
+
+        input[type="text"],[type="password"] {
+            color:  #22e0ff ;
+            width: 100%;
+            border: 3px solid #121214;
+            border-radius: 4px;
+            margin: 10px 0;
+            outline: none;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: 0.3s;
+            align-items: center;
+            background: rgb(18, 18, 20);
+        }
+
+        input[type="text"]:focus {
+            border-color:  #22e0ff ;
+            box-shadow: 0 0 8px 0#121214;
+        }
+        input[type="password"]:focus {
+            border-color:  #22e0ff ;
+            box-shadow: 0 0 8px 0#121214;
+        }
+
+        .inputWithIcon input[type="text"],  [type="password"] {
+            padding-left: 40px;
+        }
+
+        .inputWithIcon {
+            position: relative;
+        }
+
+        .inputWithIcon i {
+            position: absolute;
+            left: 0;
+            top: 20px;
+            padding: 10px 10px;
+            color: #28272C;
+            transition: 0.3s;
+            font-size: 20px;
+        }
+
+        .inputWithIcon input[type="text"]:focus+i {
+            color:  #22e0ff ;
+        }
+
+        .inputWithIcon input[type="password"]:focus+i {
+            color:  #22e0ff ;
+        }
+
+        .inputWithIcon.inputIconBg i {
+            background-color: wheat;
+            color: #8257E5;
+            padding: 9px 4px;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .inputWithIcon.inputIconBg input[type="text"]:focus+i {
+            color: #8257E5;
+            background-color: #8257E5;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+
+        div.container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        button {
+            background-color: #22e0ff ;
+    border: none;
+    border-radius: 6px;
+    color:#28272C;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+        }
+
+        button:hover {
+            animation-name: botao;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            box-shadow: 0 0 2px 3px #00ffff ; 
+        }
+
+        @keyframes botao {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.06);
+            }
+
+        }
+
+        .final {
+            width: calc(80% - 190px);
+            margin: 12px 0 0 30px;
+            font-size: 12px;
+            color: #fff;
+            float: left;
+        }
+   
